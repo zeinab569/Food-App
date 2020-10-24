@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/scr/models/category.dart';
 import 'package:food_app/scr/widgets/title.dart';
-import '../commens.dart';
+import '../helpers/commens.dart';
 
 List<CategoryModel> categoriesList =[
   CategoryModel(name:"Salad",image:"salad.jpg"),
   CategoryModel(name:"Burger",image:"burger.jpg"),
-  CategoryModel(name:"Egg",image:"egg.jpg"),
+
   CategoryModel(name:"Pizza",image:"pizza.jpg"),
   CategoryModel(name:"Sandwich",image:"sandawitch.jpg"),
   CategoryModel(name:"BreakFast",image:"breakfast.jpg"),
   CategoryModel(name:"Dinner",image:"dinner.jpg"),
   CategoryModel(name:"Desert",image:"desert.jpg"),
-  //CategoryModel(name:"Ice Cream",image:"ice creame 2.jpg"),
+  CategoryModel(name:"Egg",image:"egg.jpg"),
+
 ];
 class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      height: 100,
+      height: 130,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categoriesList.length,
@@ -39,7 +40,7 @@ class Categories extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: EdgeInsets.all(4),
-                    child: Image.asset("images/${categoriesList[index].image}",width: 50,height: 50,),
+                    child: Image.asset("images/${categoriesList[index].image}",width: 60,height: 60,),
                   ),
                 ),
                 SizedBox(height: 5,),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/scr/commens.dart';
+import 'package:food_app/scr/helpers/commens.dart';
 class CustomText extends StatelessWidget {
   final String text;
   final double size;
